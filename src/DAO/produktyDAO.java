@@ -5,8 +5,12 @@
  */
 package DAO;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import javafx.scene.control.TextArea;
 import modele.Produkty;
 
 /**
@@ -20,6 +24,25 @@ public class produktyDAO extends DAO<Produkty, Integer>{
          closeSessionWithTrans();
          return lista;
     }
+    public byte[] insertPhoto(TextArea g){
+            File file = new File(g.getText());
+            byte[] image = new byte[(int)file.length()];
+            FileInputStream inputStream = null;
+            try{
+              inputStream = new FileInputStream(file);
+              inputStream.read(image);
+            } catch(IOException e){   
+            } finally{
+                try{
+                   if(inputStream!=null){
+                      inputStream.close();
+                   }
+                } catch (IOException e){ 
+                }
+            }
+            return image;
+         }         
+    
     public produktyDAO(){};
 
 

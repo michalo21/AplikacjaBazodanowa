@@ -27,7 +27,7 @@ public class ProjektPO2 extends Application {
         
         Parent root = FXMLLoader.load(getClass().getResource("PanelLogowania.fxml"));
         Scene scene = new Scene(root, 324, 400);
-        scene.getStylesheets().add("panel.css");
+        scene.getStylesheets().add("/CSS/panel.css");
         primaryStage.setTitle("Logowanie do bazy danych");
         primaryStage.setScene(scene);
         primaryStage.show();

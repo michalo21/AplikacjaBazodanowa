@@ -37,7 +37,7 @@ public class HibernateUtil {
     
     public static void StartSessionFactory(){
         try {
-            config = new Configuration().configure("hibernate.cfg.xml");
+            config = new Configuration().configure("/HibernateConfigXML/hibernate.cfg.xml");
                           config.addAnnotatedClass(Kategorie.class);
                           config.addAnnotatedClass(Podkategorie.class);
                           config.addAnnotatedClass(Producent.class);

@@ -27,14 +27,18 @@ public class uzytkownicyDAO extends DAO<Uzytkownicy, Integer> {
     };
     public boolean auth(String login, String passwd){
       List<Uzytkownicy> users = getAll();
-      for(int i = 0; i < users.size(); i++){
-          if(login.equals(users.get(i).getNazwa_uzytkownika()) && passwd.equals(users.get(i).getHaslo_uzytkownika())){
-              return true;
-          }else{
-              continue;
+      if(!users.isEmpty()){
+        for(int i = 0; i < users.size(); i++){
+             if(login.equals(users.get(i).getNazwa_uzytkownika()) && passwd.equals(users.get(i).getHaslo_uzytkownika())){
+                 return true;
+              }else{
+                  continue;
+              }
           }
-      }
       return false;
+              }else{
+                return true;
+               }
     }
 
     public uzytkownicyDAO(){};

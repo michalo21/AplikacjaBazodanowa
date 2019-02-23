@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projektpo2.ProjektPO2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProjektPO2Controller">
    <children>
       <TabPane prefHeight="768.0" prefWidth="1366.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -52,7 +52,7 @@
                            <children>
                               <TableView fx:id="tabUnderCat" layoutY="3.0" prefHeight="728.0" prefWidth="978.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <columns>
-                                    <TableColumn fx:id="idTableUnderCat" prefWidth="155.0" text="ID podkategorii" />
+                                    <TableColumn fx:id="idTableUnderCat" prefWidth="155.0" text="Lp." />
                                     <TableColumn fx:id="nameTableUnderCat" prefWidth="391.0" text="Nazwa podkategorii" />
                                     <TableColumn fx:id="nameCatTableUnderCat" prefWidth="428.0" text="Nazwa kategorii" />
                                  </columns>
@@ -92,7 +92,7 @@
                            <children>
                               <TableView fx:id="tabProducent" layoutY="3.0" prefHeight="752.0" prefWidth="988.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <columns>
-                                    <TableColumn fx:id="idTableProducent" prefWidth="130.0" text="ID producenta" />
+                                    <TableColumn fx:id="idTableProducent" prefWidth="130.0" text="Lp." />
                                     <TableColumn fx:id="nameTableProducent" prefWidth="854.0" text="Nazwa producenta" />
                                  </columns>
                               </TableView>
@@ -199,7 +199,7 @@
                            <children>
                               <TableView fx:id="tabCat" layoutY="3.0" prefHeight="761.0" prefWidth="979.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <columns>
-                                    <TableColumn fx:id="idTableCat" prefWidth="132.0" text="ID kategorii" />
+                                    <TableColumn fx:id="idTableCat" prefWidth="132.0" text="Lp." />
                                     <TableColumn fx:id="nameTableCat" prefWidth="846.0" text="Nazwa" />
                                  </columns>
                               </TableView>
