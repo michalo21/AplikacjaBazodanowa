@@ -1,2 +1,2 @@
-Database appliction with basic CRUD and searching specyfic records.
+Database appliction with basic CRUD and searching specific records.
 Technologies: JAVAFX, Hibernate, MySQL, CSS
